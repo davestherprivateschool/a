@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --bo-color: #EF476F;
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+span {
+    background: var(--main-color);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* MENU-ICON */
+#menu-icon {
+    position: relative;
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    background: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 6%;
+    opacity: 85%;
+    /* background: transparent; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+header.sticky {
+    background: var(--bg-color);
+}
+
+.logo {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: var(--main-color);
+}
+/* ************************ */
+/*  */
+
+/* SECTION 1 */
+.section1 {
+    background-image: url(images/hmmm.jpg);
+    background-size: cover;
+    background-position: center;
+    background-image: no-repeat;
+}
+/* SECTION 2 */
+.section2 {
+   background: var(--bg-color);
+}
+
+.rebrand {
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tune h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+/* .btn-box {
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem; 
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+
+.btn-box .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+} */
+
+/* SECTION 3 */ 
+.section3 {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    
+}
+
+.section3 figure {
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    /* width: 500px; */
+}
+
+.section3 figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: gray 0 0 1px;
+    width: 200px;
+}
+
+/* SECTION 4 */
+.section4 { 
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container1 {
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.container1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    scroll-snap-align: center;
+}
+
+/* SECTION 5 */
+.section5 {
+    background: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.section5 .other h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+}
+
+.section5 .them {
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.section5 .things {
+    margin-top: 30px;
+}
+
+.section5 .them h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.bx {
+    font-size: 25px;
+}
+
+/* SECTION 6 */
+.section6 {
+    background: var(--bg-color);
+}
+  
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+  
+.gallery img {
+    border-radius: 17px;
+    width: 100%;
+    height: auto; 
+}
+  
+.item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SECTION 7 */
+.section7 {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.row1 {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.row1 p {
+    margin-bottom: 20px;
+}
+
+.all, .none {
+    flex: 1 1 40rem; 
+    max-width: 50%;
+}
+
+/* SECTION 8 */
+.section8 {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 2rem;
+    min-height: 50vh;
+}
+
+.out p {
+    margin: 20px 0;
+}
+
+/* SECTION 9 */
+.section9 {
+    background: var(--second-bg-color);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    min-height: 20vh;
+}
+
+
+.chi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.school-0 {
+    margin-bottom: 30px
+}
+
+.school {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.school-1, .school-2 {
+    width: 50%;
+}
+
+.last h2 {
+    margin-bottom: 30px;
+}
+
+.last p {
+    margin-bottom: 10px;
+}
+
+.last a {
+    color: rgb(177, 14, 14);
+}
+
+
+
+
+/* footer  */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+}
+
+.footer-text, .footer-iconTop {
+    position: relative;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.footer-iconTop a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+
+.footer-iconTop a i {
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    transition: .5s;
+}
+
+.footer-iconTop a:hover i {
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .header {
+        background: var(--bg-color);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--main-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, .2);
+        border-radius: 0 0 1rem 1rem;
+        transition: .25s ease;
+        transition-delay: .25s;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s  ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        transition-delay: .25s;
+        left: 0;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+}
+
+/* section 1 */
+@media (max-width: 768px) {
+    .section1 {
+    min-height: 50vh;
+    }
+}
+
+/* section 2 */
+@media (max-width: 768px) {
+    .section2 {
+        min-height: 80%;
+    }
+
+    .rebrand {
+        font-size: 2rem;
+    }
+
+    .tune h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* section 3 */
+@media (max-width: 768px) {
+    .section3 figure {
+        margin-top: 50px;
+    }
+
+    .section3 figure img {
+        width: 160px;
+    }
+}
+
+/* section 4 */
+@media (max-width: 768px) {
+    .section4 {
+        min-height: 20vh;
+    }
+
+    .section4 .container1 {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .section5 .other h1 {
+        font-size: 2.5rem
+    }
+
+    .section5 .them h2 {
+        font-size: 2rem;
+    }
+
+    .section5 .them {
+        font-size: 1.5rem;
+    }
+}
+
+/* section6 */
+@media (max-width: 1000px) {
+    .gallery {
+      padding: 10px; 
+    }
+    .item {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .section7 {
+        font-size: 1.5rem;
+    }
+
+    .all, .none {
+        max-width: 100%;
+    }
+
+    /* section 8 */
+    .section8 {
+        font-size: 1.5rem;
+    }
+
+    /* section9 */
+    .chi {
+        font-size: 1.5rem;
+        flex-direction: column;
+    }
+    
+    .chi h1, h2 {
+        font-size: 2rem;
+    }
+    
+    .ourschool {
+        margin-bottom: 20px;
+    }
+    
+    .school-1, .school-2 {
+        width: 100%;
+    } 
+        
+    .school-0 {
+        margin-bottom: 7px;
+    }
+    
+    .last h2 {
+        margin-bottom: 10px;
+    }
+
+
+    /* footer */
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer-text p {
+        font-size: 1.2rem;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+}
